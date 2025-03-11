@@ -75,24 +75,6 @@ def get_token(id: str, username: str, email: str, phone_no: int):
         raise HTTPException(status_code=500, detail="Internal server error")
 
 
-# def decode_token(token: str):
-#     try:
-#         payload = jwt.decode(token, SECRET_KEY, algorithm=ALGORITHM)
-#         id = payload.get("id")
-#         username = payload.get("username")
-#         email = payload.get("email")
-#         phone_no = payload.get("phone_no")
-
-#         if not id or not username or not email or not phone_no:
-#             raise HTTPException(status_code=403, detail="Invalid token")
-#         return id, username, email, phone_no
-
-#     except jwt.ExpiredSignatureError:
-#         raise HTTPException(status_code=403, detail="Token has expired")
-#     except jwt.InvalidTokenError as e:
-#         raise HTTPException(status_code=403, detail="Invalid token")
-
-
 def decode_token(token: str):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=ALGORITHM)
