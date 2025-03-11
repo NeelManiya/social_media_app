@@ -13,7 +13,7 @@ from sqlalchemy.orm import Session
 from pydantic import validate_email
 
 
-user_router = APIRouter(tags=["User"])
+user_router = APIRouter(tags=["User_Authentication"])
 
 
 @user_router.post("/signup")
