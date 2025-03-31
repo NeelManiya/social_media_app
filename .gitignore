@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+.venv/
+photos/
+z.py
+
+# Environment variables
+.env
+
+# Logs and databases
+# logs/
+*.log
+*.sqlite3
+*.db
+database
+
+# Alembic migrations
+alembic/
+alembic.ini
+practice.py
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Python package files
+*.egg-info/
+dist/
+build/
+
+# Dependencies
+*.lock
+
+# Ignore IDE/editor specific files
+.idea/
+*.iml
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
